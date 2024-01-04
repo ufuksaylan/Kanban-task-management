@@ -1,0 +1,16 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .img-center {
+    @apply flex justify-center items-center;
+  }
+  .pop-up {
+    @apply rounded p-6;
+  }
+  .pop-up-header {
+    @apply absolute ml-auto mr-auto left-0 right-0 top-28 w-11/12 rounded;
+  }
+}

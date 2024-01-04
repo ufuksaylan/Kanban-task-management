@@ -1,0 +1,78 @@
+/* color palette */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+:root {
+  /* Color styles */
+  --black: #000112;
+  --very--dark--grey--dark--b-g: #20212c;
+  --dark--grey: #2b2c37;
+  --lines--dark: #3e3f4e;
+  --medium--grey: #828fa3;
+  --lines--light: #e4ebfa;
+  --light--grey--light--b-g: #f4f7fd;
+  --white: #ffffff;
+  --main--purple: #635fc7;
+  --main--purple--hover: #a8a4ff;
+  --red: #ea5555;
+  --red--hover: #ff9898;
+
+  /* Text-size styles */
+  --heading--x-l: 24px;
+  --heading--l: 18px;
+  --heading--m: 15px;
+  --heading--s: 12px;
+  --body--l: 13px;
+  --body--m: 12px;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-primary: var(--main--purple);
+  --color-primary-hover: var(--main--purple--hover);
+
+  --color-filter-primary: invert(42%) sepia(6%) saturate(6654%) hue-rotate(206deg) brightness(90%)
+    contrast(85%);
+
+  --color-primary-S: var(--main--purple);
+  --color-primary-S-hover: var(--main--purple--hover);
+
+  --color-secondary-L: var(--lines--light);
+  --color-secondary-L-hover: var(--medium--grey);
+
+  --color-background: var(--very--dark--grey--dark--b-g);
+  --color-section-background: var(--dark--grey);
+
+  --color-text-section: var(--medium--grey);
+  --color-filter-text: invert(57%) sepia(7%) saturate(924%) hue-rotate(177deg) brightness(97%)
+    contrast(91%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  color: var(--color-text);
+  /* line-height: 1.6; */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+}
+
+#app {
+  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 90%; */
+}
